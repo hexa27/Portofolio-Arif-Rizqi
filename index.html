@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rep Profil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+  <!-- ===== NAVBAR ===== -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header class="navbar">
+    <a href="#beranda" class="logo">Repzy!<span>.</span></a>
+
+    <nav class="menu" id="menu">
+      <a href="#beranda" class="menu-link">Menu</a>
+      <a href="#tentang" class="menu-link">About</a>
+      <a href="#prestasi" class="menu-link">Archivements</a>
+      <a href="#kontak" class="menu-link">Contact</a>
+    </nav>
+
+    <div class="navbar-actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Ganti tema terang/gelap">
+        <span class="toggle-track">
+          <span class="toggle-thumb"></span>
+        </span>
+      </button>
+      <button id="menu-btn" class="menu-btn" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="beranda" class="hero">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="spotlight" id="spotlight"></div>
+    <div class="grid-overlay"></div>
+
+    <p class="eyebrow">Hello, Welcome to my profile</p>
+    <h1 class="hero-title">M. Arif Rizqi Ananda</h1>
+    <h2 class="hero-subtitle">Student at President University</h2>
+    <p class="hero-role"><span id="role-text">Information Technology</span><span class="cursor-blink">|</span></p>
+    <p class="hero-desc">
+      Developing this website has been a meaningful process for me. 
+      I designed and built it from the ground up as a dedicated space for self-reflection, 
+      giving me the opportunity to explore my passions and better understand my own identity.
+    </p>
+    <div class="hero-cta">
+      <a href="#tentang" class="btn btn-primary">About Me</a>
+      <a href="#prestasi" class="btn btn-ghost">My Achievements</a>
+    </div>
+  </section>
+
+  <!-- ===== TENTANG ===== -->
+  <section id="tentang" class="section about">
+    <p class="section-eyebrow">About</p>
+    <div class="about-grid">
+      <div class="about-photo">
+        <div class="photo-frame">
+          <img src="foto1.jpeg" alt="Foto profil">
+        </div>
+      </div>
+      <div class="about-content">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+           Hello! I'm M. Arif Rizqi Ananda, a freshman at President University. 
+           My fascination with the fast-paced evolution of technology began in elementary school, 
+           but my actual coding journey officially took off during my time at MAN Asahan
+        </p>
+        <p class="about-text">
+          Throughout high school, I was highly active both inside and outside the classroom. 
+          By taking on leadership roles in the Student Council (OSIM) and competing in academic olympiads, 
+          I developed strong problem-solving, analytical, and teamwork skills. 
+          Today, I am channeling those skills into my ultimate goal: diving deep into the field of 
+          Cybersecurity to understand, protect, and secure digital environments.
+        </p>
+
+        <div class="skills">
+          <span class="skill-tag">Leadership</span>
+          <span class="skill-tag">Technology</span>
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">Teamwork</span>
+          <span class="skill-tag">Communication</span>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-item">
+            <span class="stat-number" data-count="5">0</span>
+            <span class="stat-label">Project Completed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="4">0</span>
+            <span class="stat-label">Awards</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="1">0</span>
+            <span class="stat-label">Years of Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRESTASI ===== -->
+  <section id="prestasi" class="section achievements">
+    <p class="section-eyebrow">Achievements</p>
+    <h2 class="section-title">My Achievements</h2>
+
+    <div class="achievement-grid">
+
+      <article class="achievement-card" data-tilt>
+        <div class="achievement-img">
+          <img src="foto2.jpeg" alt="Prestasi 1">
+          <span class="achievement-year">2025/2026</span>
+        </div>
+        <h3 class="achievement-title">Student Council (OSIM)</h3>
+        <p class="achievement-desc">OSIM (Organisasi Siswa Intra Madrasah) is the official student government body in 
+          Islamic secondary schools (Madrasah Tsanawiyah and Madrasah Aliyah) in Indonesia. It functions equivalently to a Student Council,
+           serving as the primary platform for student leadership, 
+          activity coordination, and school event management.</p>
+      </article>
+
+      <article class="achievement-card" data-tilt>
+        <div class="achievement-img">
+          <img src="foto3.jpeg" alt="Prestasi 2">
+          <span class="achievement-year">2025</span>
+        </div>
+        <h3 class="achievement-title">International Science Olympiad 9 (ISO-9)</h3>
+        <p class="achievement-desc">A national olympiad featuring international-standard problems, organized by EDUExpo and ILTI (International Level Test Institution).</p>
+      </article>
+
+      <article class="achievement-card" data-tilt>
+        <div class="achievement-img">
+          <img src="foto4.jpeg" alt="Prestasi 3">
+          <span class="achievement-year">2026</span>
+        </div>
+        <h3 class="achievement-title">Olimpiade Sains Siswa Nasional 10 (OSSN 10)</h3>
+        <p class="achievement-desc">A national mathematics olympiad organized by CV. Bee Digital Prestasi, featuring elimination rounds starting from the provincial level.</p>
+      </article>
+
+      <article class="achievement-card" data-tilt>
+        <div class="achievement-img">
+          <img src="foto5.jpeg" alt="Prestasi 4">
+          <span class="achievement-year">2025</span>
+        </div>
+        <h3 class="achievement-title">Olimpiade Nasional Yuk Belajar (Olimpiade YB)</h3>
+        <p class="achievement-desc">A national mathematics olympiad hosted by Media Edukasi Indonesia and YUK Belajar, in sponsorship with Telkom University.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== KONTAK / FOOTER ===== -->
+  <footer id="kontak" class="footer">
+    <p class="section-eyebrow">Contact</p>
+    <h2 class="footer-title">Lets Connect</h2>
+    <p class="footer-desc">Click on any icon below to reach out to me.</p>
+
+    <div class="social-row">
+      <a class="social-icon" href="https://instagram.com/arzqyyy" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+        </svg>
+      </a>
+
+      <a class="social-icon" href="https://wa.me/6282284831381" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 20l1.3-4.2A7.9 7.9 0 1 1 8.7 19L4 20Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M8.6 9.4c.2-.6.5-.6.8-.6h.5c.2 0 .4 0 .5.4.2.5.6 1.5.6 1.6.1.2.1.3 0 .5-.1.2-.2.3-.3.4l-.4.5c-.1.1-.2.3 0 .5.2.4.8 1.1 1.6 1.6.6.4 1 .5 1.2.5.2 0 .3-.1.4-.2l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.3.1.4.3.1.2.1.9-.2 1.3-.3.5-1.1.9-1.7.9-.6 0-1.9-.2-3.5-1.6-1.9-1.7-2.5-3.1-2.6-3.4-.1-.2-.5-.9-.5-1.7 0-.8.4-1.1.5-1.3Z" fill="currentColor"/>
+        </svg>
+      </a>
+
+      <a class="social-icon" href="https://linkedin.com/in/m-arif-rizqi-ananda-ba608a3a8" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="8" cy="8.4" r="1.2" fill="currentColor"/>
+          <path d="M8 11.2v6.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M12.2 17.4v-3.6c0-1.3.8-2.2 2-2.2s1.9.8 1.9 2.2v3.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12.2 11.2v6.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <p class="footer-copy">© 2026 PT. RepzyTech</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
